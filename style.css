@@ -25,7 +25,7 @@
     background-size: 790px;
     width: 790px;
     height: 697px;
-    background-image: url(images/bg\ 1.png);
+    background-image: url(images/background-flowers.png);
     z-index: -1;
     left: 85px;
     top: -0px;
@@ -55,7 +55,7 @@
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #A5A3B9;
+    color: #A5A3B9;g
 }
 
 .product-name {
