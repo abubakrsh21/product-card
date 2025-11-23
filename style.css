@@ -94,3 +94,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.red {
+    background: red;
+    color: white;
+}
