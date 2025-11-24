@@ -95,7 +95,10 @@
     justify-content: space-between;
 }
 
-.red {
-    background: red;
-    color: white;
+.bg-red {
+  background: red;
+}
+
+.white {
+  color: white;
 }

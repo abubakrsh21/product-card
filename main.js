@@ -1,11 +1,11 @@
 // Покраска первой карточки
 
-const productCard = document.querySelector('.card-container');
+const productCardFirst = document.querySelector('.card-container');
 const changeFirstCardColorButton = document.querySelector('#change-color-first-card');
 const greenColorHash = '#00FF00';
 
 changeFirstCardColorButton.addEventListener('click', () => {
-    productCard.style.backgroundColor = greenColorHash;
+    productCardFirst.style.backgroundColor = greenColorHash;
 })
 
 // Покраска всех карточек
@@ -57,8 +57,8 @@ outputTitle.addEventListener('mouseenter', () => {
 
 // Изменение цвета самой кнопки
 
-const changeColorButton = document.getElementById('change-color-btn');
+const changeColorButton = document.getElementById('toggle-color-btn');
 
 changeColorButton.addEventListener('click', () => {
-    changeColorButton.classList.toggle('red');
+    changeColorButton.classList.toggle('bg-red');
 });
