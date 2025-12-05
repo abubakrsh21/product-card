@@ -43,8 +43,8 @@ function BuyProduct(budget) {
     }
 }
 
-checkProduct(100);
-checkProduct(40);
+BuyProduct(100);
+BuyProduct(40);
 
 
 
