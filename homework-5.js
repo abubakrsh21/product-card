@@ -11,7 +11,7 @@ showCityWeather("Ташкент", 7);
 
 // Создание функции связанное со скоростью звука
 
-const speedOfSound = 343;
+const SPEED_OF_SOUND = 343;
 
 function checkSpeed(speed) {
     if (speed > speedOfSound) {
@@ -34,7 +34,7 @@ checkSpeed(343);
 const product = 'Йогурт';
 const price = 50;
 
-function checkProduct(budget) {
+function BuyProduct(budget) {
     if (budget > price) {
         console.log(`${product} приобретён. Спасибо за покупку!`);
     } else {
