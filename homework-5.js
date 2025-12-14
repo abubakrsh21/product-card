@@ -11,7 +11,7 @@ showCityWeather("Ташкент", 7);
 
 // Создание функции связанное со скоростью звука
 
-const SPEED_OF_SOUND = 343;
+const speedOfSound = 343;
 
 function checkSpeed(speed) {
     if (speed > speedOfSound) {
