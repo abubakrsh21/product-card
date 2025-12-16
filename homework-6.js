@@ -41,12 +41,12 @@ console.log(car);
 
 //  (6) Создание функции выводящее объект и его свойство
 
-function printObjectAndProperty(obj, property) {
+function printObjectProperty(obj, property) {
     console.log(obj[property]);
 }
 
-printObjectAndProperty(car, "model");
-printObjectAndProperty(car, "maxSpeed");
+printObjectProperty(car, "model");
+printObjectProperty(car, "maxSpeed");
 
 
 //  (7) Создание простого массива 
@@ -120,12 +120,10 @@ console.log(allBooks);
 // с чат жпт и то не все догнал.. сложновато для нашего уровня.)
 
 function markRareBooks(booksArray) {
-    return booksArray.map(book => {
-        return {
-            ...book,
-            isRare: book.year > 2000
-        };
-    });
+    return booksArray.map(book => ({
+        ...book,
+        isRare: book.year > 2000
+    }));
 }
 
 const booksWithRareFlag = markRareBooks(allBooks);
