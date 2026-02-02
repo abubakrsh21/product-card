@@ -1,3 +1,5 @@
+import { comments } from "./comments.js";
+
 // (2) Создание массива чисел.
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -33,33 +35,32 @@ const cars = [
   }
 ];
 
-const carCheck = 2019;
+const carYearCheck = 2019;
 
-if (cars.some(car => car.year === carCheck)) {
-    console.log(`${carCheck} есть в массиве`);
+if (cars.some(car => car.year === carYearCheck)) {
+  console.log(`${carYearCheck} есть в массиве`);
 } else {
-    console.log(`${carCheck} отсутствует в массиве`);
+  console.log(`${carYearCheck} отсутствует в массиве`);
 }
 
 
 
 // (4) Создание функции которая переворачивает массив.
 
-const reversedCars = cars.reverse()
+function reverseArray(array) {
+  return array.reverse()
+}
 
-const reversedNumbers = numbers.reverse()
-
-console.log(reversedCars, reversedNumbers)
+console.log(reverseArray(cars))
+console.log(reverseArray(numbers))
 
 
 
 // (7) Выведение в консоль массих комментариев.
 
-import { comments } from "./comments.js";
-
-const commentsWithEmail = comments.filter(comment =>
-    comment.email.includes('.com')
-);
+const commentsWithEmail = comments.filter(comment => {
+  comment.email.includes('.com')
+});
 
 console.log(commentsWithEmail);
 
