@@ -41,8 +41,16 @@
 }
 
 .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    padding: 25px;
+    background-color: #F7F7FA;
+    box-shadow: 2px 2px 10px 0px #5150761A;
+}
+
+.product-card {
     width: 340px;
-    height: 573px;
     padding: 25px;
     background-color: #F7F7FA;
     box-shadow: 2px 2px 10px 0px #5150761A;
@@ -96,9 +104,9 @@
 }
 
 .bg-red {
-  background: red;
+    background: red;
 }
 
 .white {
-  color: white;
+    color: white;
 }
