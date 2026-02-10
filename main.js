@@ -1,12 +1,12 @@
 // Покраска первой карточки
 
-const productCardFirst = document.querySelector('.card-container');
-const changeFirstCardColorButton = document.querySelector('#change-color-first-card');
-const greenColorHash = '#00FF00';
+    const productCardFirst = document.querySelector('.card-container');
+    const changeFirstCardColorButton = document.querySelector('#change-color-first-card');
+    const greenColorHash = '#00FF00';
 
-changeFirstCardColorButton.addEventListener('click', () => {
-    productCardFirst.style.backgroundColor = greenColorHash;
-})
+    changeFirstCardColorButton.addEventListener('click', () => {
+        productCardFirst.style.backgroundColor = greenColorHash;
+    })
 
 // Покраска всех карточек
 
@@ -62,3 +62,4 @@ const changeColorButton = document.getElementById('toggle-color-btn');
 changeColorButton.addEventListener('click', () => {
     changeColorButton.classList.toggle('bg-red');
 });
+

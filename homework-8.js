@@ -8,6 +8,7 @@ const productList = document.getElementById('product-list');
 function displayCards(products) {
     products.forEach(product => {
         const productClone = productTemplate.content.cloneNode(true);
+
         productClone.querySelector('.product-img').src = `/images/${product.img}.png`
         productClone.querySelector('.product-category').textContent = product.category
         productClone.querySelector('.product-name').textContent = product.name
@@ -22,8 +23,14 @@ function displayCards(products) {
 
 // (4) Использование метода reduce
 
-const productDescription = products.reduce((acc, product) =>
-  [...acc, {[product.name]: product.description}], [])
+const productDescription = products.reduce((accumulator, product) => {
+    const productInfo = {
+        [product.name]: product.description
+    };
+
+    return [...accumulator, productInfo];
+}, []);
+
 console.log(productDescription);
 
 
