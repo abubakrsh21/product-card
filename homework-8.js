@@ -17,7 +17,7 @@ function displayCards(products) {
             `<li>${item}</li>`).join("");
         productClone.querySelector('.product-price').textContent = product.price + " \u20BD"
         productList.appendChild(productClone)
-    })
+    });
 };
 
 
@@ -44,6 +44,6 @@ const showCards = () => {
     } else {
         alert("Введите число от 1 до 5");
     }
-}
+};
 
 showCards()
