@@ -42,11 +42,94 @@
       </div>
     </template>
   </div>
+
+  <button id="open-modal-btn">Регистрация</button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close">✖</button>
+    <h2>Регистрация</h2>
+
+    <form id="register-form" novalidate>
+
+      <label for="firstName">Имя</label>
+      <input type="text" id="firstName" name="firstName" placeholder="Введи имя" required minlength="3">
+      <br>
+
+      <label for="lastName">Фамилия</label>
+      <input type="text" id="lastName" name="lastName" placeholder="Введи фамилию" required minlength="3">
+      <br>
+
+      <label for="birthDate">Дата рождения</label>
+      <input type="date" id="birthDate" name="birthDate" required>
+      <br>
+
+      <label for="login">Логин</label>
+      <input type="text" id="login" name="login" placeholder="Придумай логин" required minlength="4">
+      <br>
+
+      <label for="password">Пароль</label>
+      <input type="password" id="password" name="password" placeholder="Введи пароль" required minlength="4">
+      <br>
+
+      <label for="repeatPassword">Повтори пароля</label>
+      <input type="password" id="repeatPassword" name="repeatPassword" placeholder="Повтори пароль" required
+        minlength="4">
+
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h2>Product Cards</h2>
+          <p>У нас самые лучшие продукты для кожи!</p>
+          <div class="social">
+            <a href="#">
+              <img src="./images/tg-icon.svg" alt="Telegram">
+            </a>
+            <a href="#">
+              <img src="./images/vk-icon.svg" alt="VK">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col" id="follower-email">
+          <form class="subscribe-form">
+            <label for="email">Подпишись на наши акции:</label>
+
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Введи Email..." required>
+              <hr>
+              <button type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="footer-col">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="breaker-link">
+      <p class="copyright">© www.product-cards.com All rights reserved</p>
+    </div>
+  </footer>
+
   <script src="main.js"></script>
   <script src="homework-5.js"></script>
   <script src="homework-6.js"></script>
   <script type="module" src="homework-7.js"></script>
   <script type="module" src="homework-8.js"></script>
+  <script type="module" src="homework-9.js"></script>
 </body>
 
 </html>
