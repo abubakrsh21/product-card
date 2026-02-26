@@ -6,13 +6,6 @@ const emailInput = document.querySelector('#email');
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const emailValue = emailInput.value.trim();
-
-    if (!emailValue) {
-        alert('Введи email');
-        return;
-    }
-
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!emailPattern.test(emailValue)) {
@@ -87,9 +80,6 @@ registerForm.addEventListener('submit', function (event) {
     };
 
     console.log(user);
-
-    modal.classList.remove('modal-showed');
-    overlay.classList.remove('modal-showed');
 
     registerForm.reset();
 });
