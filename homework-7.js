@@ -114,9 +114,9 @@ console.log(emailsWithMap);
 
 // (12) Работа с методом toString(), join()
 
-const emailsToString = emails.toString();
+const emailsToString = emailsWithMap.toString();
 console.log(emailsToString);
 
 
-const emailsStringJoin = emails.join(", ");
+const emailsStringJoin = emailsWithMap.join(", ");
 console.log(emailsStringJoin);
