@@ -33,24 +33,3 @@ class SportsCar extends Car {
         console.log(`Максимальная скорость: ${this.maxSpeed}`);
     }
 }
-
-const mercedes = new Car(
-    "Mercedes-Benz",
-    "C-Class",
-    2020,
-    "Автомат"
-);
-
-const ferrari = new SportsCar(
-    "Ferrari",
-    "488",
-    2022,
-    "Автомат",
-    330
-);
-
-console.log(mercedes.showInfo());
-mercedes.drive();
-
-console.log(ferrari.showInfo());
-ferrari.showSpeed();

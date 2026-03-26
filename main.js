@@ -2,7 +2,7 @@
 
 import './products.js';
 import './comments.js';
-import './classes.js';
+import './Classes.js';
 import { products } from './products.js';
 import './homework-5.js';
 import './homework-6.js';
@@ -10,6 +10,8 @@ import './homework-7.js';
 import './homework-8.js';
 import './homework-9.js';
 
+import Modal from './Modal.js';
+import Form from './Form.js';
 // Покраска первой карточки
 
 const template = document.getElementById('product-template');
@@ -90,7 +92,7 @@ changeColorButton.addEventListener('click', () => {
 
 // 10-ое задание №4 работа с модальным окном
 
-import Modal from './modal.js';
+
 
 const modal = new Modal('modal', 'overlay');
 
@@ -103,7 +105,6 @@ openBtn.addEventListener('click', () => {
 
 // №5 Реализование формы
 
-import Form from './form.js';
 
 const form = new Form('register-form');
 
@@ -135,3 +136,24 @@ form.form.addEventListener('submit', (e) => {
     form.reset();
     modal.close();
 });
+
+const mercedes = new Car(
+    "Mercedes-Benz",
+    "C-Class",
+    2020,
+    "Автомат"
+);
+
+const ferrari = new SportsCar(
+    "Ferrari",
+    "488",
+    2022,
+    "Автомат",
+    330
+);
+
+console.log(mercedes.showInfo());
+mercedes.drive();
+
+console.log(ferrari.showInfo());
+ferrari.showSpeed();
