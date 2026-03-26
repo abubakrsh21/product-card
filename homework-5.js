@@ -62,3 +62,4 @@ helloWorld();
 const name = 'Abubakr';
 const age = 21;
 const nationality = 'Uzbek';
+
