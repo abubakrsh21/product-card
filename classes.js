@@ -1,6 +1,6 @@
 // Создание структуры
 
-class Vehicle {
+export class Vehicle {
     constructor(brand, model, year) {
         this.brand = brand;
         this.model = model;
@@ -12,7 +12,7 @@ class Vehicle {
     }
 }
 
-class Car extends Vehicle {
+export class Car extends Vehicle {
     constructor(brand, model, year, transmission) {
         super(brand, model, year);
         this.transmission = transmission;
@@ -23,7 +23,7 @@ class Car extends Vehicle {
     }
 }
 
-class SportsCar extends Car {
+export default class SportsCar extends Car {
     constructor(brand, model, year, transmission, maxSpeed) {
         super(brand, model, year, transmission);
         this.maxSpeed = maxSpeed;

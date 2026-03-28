@@ -2,7 +2,7 @@
 
 import './products.js';
 import './comments.js';
-import './Classes.js';
+import './classes.js';
 import { products } from './products.js';
 import './homework-5.js';
 import './homework-6.js';
@@ -10,8 +10,15 @@ import './homework-7.js';
 import './homework-8.js';
 import './homework-9.js';
 
-import Modal from './Modal.js';
-import Form from './Form.js';
+import Modal from './modal.js';
+import Form from './form.js';
+
+import Vehicle from './classes.js';
+import Car from './classes.js';
+import SportsCar from './classes.js';
+
+import './homework-11.js';
+
 // Покраска первой карточки
 
 const template = document.getElementById('product-template');
