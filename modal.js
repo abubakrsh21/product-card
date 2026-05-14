@@ -3,7 +3,7 @@ export default class Modal {
         this.modal = document.getElementById(modalId);
         this.overlay = document.getElementById(overlayId);
         this.closeButton = this.modal.querySelector('.modal-close');
-        
+
         this.init();
     }
 
